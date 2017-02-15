@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>STOPGAME</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <center><h1>STOP Online!</h1></center>
+               
+    <center><h2> Vamo'a Jugalo </h2></center>
+        <br/>
+        <center><button id="iniciar" onClick="iniciar()">¡Iniciar!</button></center>
+       <br/>
+       <center><h2>LA LETRA SELECCIONADA ES: </h2><input id="letra"></center>
+       <br/>
+    <center><button id="stop" onclick="stop()">¡STOP!</button></center>
+    <br>
+    <CENTER><table>
+        <tr>
+            <td><center><h2>NOMBRE</h2></center></td>
+            <td><center><h2>APELLIDO</h2></center></td>
+            <td><center><h2>CIUDAD</h2></center></td>
+            <td><center><h2>FRUTA/VEGETAL</h2></center></td>
+            <td><center><h2>ANIMAL</h2></center></td>
+            <td><center><h2>COSA</h2></center></td>
+            <td><center><h2>TOTAL</h2></center></td>
+        </tr>
+        <tr>
+            <td><input id="nombre"></td>
+            <td><input id="apellido"></td>
+            <td><input id="ciudad"></td>
+            <td><input id="alimento"></td>
+            <td><input id="animal"></td>
+            <td><input id="cosa"></td>
+            <td><center><textarea readonly="true" id="total1" rows="1" cols="5"></textarea></td>
+        </tr>
+        <br>
+        <tr>
+            <td><input readonly="true" id="nombreRes" ></td>
+            <td><input readonly="true" id="apellidoRes" ></td>
+            <td><input readonly="true" id="ciudadRes" ></td>
+            <td><input readonly="true" id="alimentoRes" ></td>
+            <td><input readonly="true" id="animalRes" ></td>
+            <td><input readonly="true" id="cosaRes" ></td>
+            <td><center><textarea readonly="true" id="total2" rows="1" cols="5"></textarea></td>
+        </tr>
+        </table></CENTER>
+        
+       <div id="output"></div>
+       <br>
+
+       
+
+       <script type="text/javascript" src="websocket.js"></script>
+       <script type="text/javascript" src="stopGame.js"></script>
+    </body>
+    
+
+</html>
+
