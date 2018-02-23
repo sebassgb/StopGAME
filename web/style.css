@@ -25,8 +25,14 @@ and open the template in the editor.
             height: 100%;
             overflow: hidden;
             font-family: arial, sans-serif;
-            background-color: #738e94;
+            background-image: url("stop.png");
+            background-repeat: no-repeat;
+            background-position: center;
             }
+            img{
+                opacity: 0.5;
+                filter: alpha(opacity=50); /* For IE8 and earlier */
+                }
             #limpiar {
                 background-color: brown; /* Green */
                 font-size: 16px;
